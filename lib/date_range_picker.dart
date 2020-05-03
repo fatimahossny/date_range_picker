@@ -290,10 +290,10 @@ class DayPicker extends StatelessWidget {
         assert(onChanged != null),
         assert(displayedMonth != null),
         assert(!firstDate.isAfter(lastDate)),
-        assert(!selectedFirstDate.isBefore(firstDate) &&
-            (selectedLastDate == null || !selectedLastDate.isAfter(lastDate))),
-        assert(selectedLastDate == null ||
-            !selectedLastDate.isBefore(selectedFirstDate)),
+//        assert(!selectedFirstDate.isBefore(firstDate) &&
+//            (selectedLastDate == null || !selectedLastDate.isAfter(lastDate))),
+//        assert(selectedLastDate == null ||
+//            !selectedLastDate.isBefore(selectedFirstDate)),
         super(key: key);
 
   /// The currently selected date.
@@ -621,10 +621,10 @@ class MonthPicker extends StatefulWidget {
   })  : assert(selectedFirstDate != null),
         assert(onChanged != null),
         assert(!firstDate.isAfter(lastDate)),
-        assert(!selectedFirstDate.isBefore(firstDate) &&
-            (selectedLastDate == null || !selectedLastDate.isAfter(lastDate))),
-        assert(selectedLastDate == null ||
-            !selectedLastDate.isBefore(selectedFirstDate)),
+//        assert(!selectedFirstDate.isBefore(firstDate) &&
+//            (selectedLastDate == null || !selectedLastDate.isAfter(lastDate))),
+//        assert(selectedLastDate == null ||
+//            !selectedLastDate.isBefore(selectedFirstDate)),
         super(key: key);
 
   /// The currently selected date.

@@ -11,10 +11,10 @@ library date_range_picker;
 import 'dart:async';
 import 'dart:math' as math;
 
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter/material.dart';
 
 /// Initial display mode of the date picker dialog.
 ///
@@ -1420,11 +1420,11 @@ Widget widgetDatePicker({
 //      'initialDate must be on or before lastDate');
 //  assert(
 //      !firstDate.isAfter(lastDate), 'lastDate must be on or after firstDate');
-  assert(
-      selectableDayPredicate == null ||
-          selectableDayPredicate(initialFirstDate) ||
-          selectableDayPredicate(initialLastDate),
-      'Provided initialDate must satisfy provided selectableDayPredicate');
+//  assert(
+//      selectableDayPredicate == null ||
+//          selectableDayPredicate(initialFirstDate) ||
+//          selectableDayPredicate(initialLastDate),
+//      'Provided initialDate must satisfy provided selectableDayPredicate');
   assert(
       initialDatePickerMode != null, 'initialDatePickerMode must not be null');
 

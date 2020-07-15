@@ -553,6 +553,15 @@ class DayPicker extends StatelessWidget {
                   first = selectedFirstDate;
                   last = dayToBuild;
                 }
+                if (selectableDayPredicate != null) {
+                  for (int i = 0; i <= last.difference(first).inDays; i++) {
+                    if(!selectableDayPredicate(first.add(Duration(days: i)))){
+                      first = dayToBuild;
+                      last = null;
+                      break;
+                    }
+                  }
+                }
               }
               onChanged([first, last]);
             },
